@@ -17,7 +17,7 @@
     shellAliases = {
       vi = "nvim";
       ll = "ls -la";
-      nixupdate = "sudo nixos-rebuild switch --flake '/home/isaac/.config/nix/src/#MonixOS'";
+      nixupdate = "sudo nixos-rebuild switch --flake '/home/isaac/.config/nix/#MonixOS'";
       homeupdate = "home-manager switch --flake /home/isaac/.config/nix/src/#isaac";
       monika = "steam-run ~/ddlc/DDLC.sh";
       pollymc = "appimage-run ~/PollyMC-Linux-7.2-x86_64.AppImage";

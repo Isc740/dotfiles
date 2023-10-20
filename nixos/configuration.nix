@@ -140,7 +140,6 @@
   ###------SYSPKGS------###
   environment.systemPackages = with pkgs; [
     rust-analyzer
-    vscode-extensions.rust-analyzer
     direnv
     gnumake
     gcc
