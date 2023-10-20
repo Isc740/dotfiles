@@ -139,10 +139,9 @@
 
   ###------SYSPKGS------###
   environment.systemPackages = with pkgs; [
+    rust-analyzer
+    vscode-extensions.rust-analyzer
     direnv
-    #rustc
-    rustup
-    #cargo
     gnumake
     gcc
     ranger
