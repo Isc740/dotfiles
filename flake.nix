@@ -18,21 +18,10 @@
             ./nixos/configuration.nix
             home-manager.nixosModules.home-manager
             {
-              #home-manager.useGlobalPkgs = true;
-              #home-manager.useUserPackages = true;
-              home-manager.users.isaac = import ./home-manager/home.nix;
+              home-manager.users.isaac = import ./home/home.nix;
             }
           ];
         };
       };
-
-      # homeConfigurations = {
-      #   isaac = home-manager.lib.homeManagerConfiguration {
-      #     inherit pkgs;
-      #     modules = [
-      #       ./home-manager/home.nix
-      #     ];
-      #   };
-      # };
     };
 }
