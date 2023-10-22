@@ -129,7 +129,6 @@
     gnome3.gnome-tweaks
     gnomeExtensions.appindicator
     gnomeExtensions.compiz-windows-effect
-    prismlauncher.packages.${pkgs.system}.prismlauncher
     pulsemixer
     dmenu
     i3lock-fancy

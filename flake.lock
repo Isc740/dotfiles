@@ -111,21 +111,6 @@
         "type": "github"
       }
     },
-    "nix-filter": {
-      "locked": {
-        "lastModified": 1694857738,
-        "narHash": "sha256-bxxNyLHjhu0N8T3REINXQ2ZkJco0ABFPn6PIe2QUfqo=",
-        "owner": "numtide",
-        "repo": "nix-filter",
-        "rev": "41fd48e00c22b4ced525af521ead8792402de0ea",
-        "type": "github"
-      },
-      "original": {
-        "owner": "numtide",
-        "repo": "nix-filter",
-        "type": "github"
-      }
-    },
     "nixpkgs": {
       "locked": {
         "lastModified": 1697851979,
@@ -212,21 +197,20 @@
         "flake-compat": "flake-compat",
         "flake-parts": "flake-parts",
         "libnbtplusplus": "libnbtplusplus",
-        "nix-filter": "nix-filter",
         "nixpkgs": "nixpkgs_2",
         "pre-commit-hooks": "pre-commit-hooks"
       },
       "locked": {
-        "lastModified": 1698004631,
-        "narHash": "sha256-covneHtcBGGM4AdHKg4uYJWTSSRstBInPgR6H98LI/U=",
-        "owner": "PrismLauncher",
-        "repo": "PrismLauncher",
-        "rev": "b376888f435047178fc5f45ed0643f83fc03ccc7",
+        "lastModified": 1686958667,
+        "narHash": "sha256-oE1dze+koAOOXWVYzJ5OAeUl9GwgAdx/vlAzJEBY5s4=",
+        "owner": "Diegiwg",
+        "repo": "PrismLauncher-Cracked",
+        "rev": "01144ae9a1c8dc0036b7d218e948cce1ab79dac5",
         "type": "github"
       },
       "original": {
-        "owner": "PrismLauncher",
-        "repo": "PrismLauncher",
+        "owner": "Diegiwg",
+        "repo": "PrismLauncher-Cracked",
         "type": "github"
       }
     },
