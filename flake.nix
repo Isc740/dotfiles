@@ -19,7 +19,11 @@
             ./nixos/configuration.nix
             home-manager.nixosModules.home-manager
             {
-              home-manager.users.isaac = import ./home/home.nix;
+              home-manager = {
+                useGlobalPkgs = true;
+                useUserPkgs = true;
+                users.isaac = import ./home/home.nix;
+              };
             }
           ];
         };
