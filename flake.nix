@@ -20,7 +20,7 @@
             home-manager.nixosModules.home-manager
             {
               home-manager = {
-                useGlobalPkgs = true;
+                # useGlobalPkgs = true;
                 # useUserPackages = true;
                 users.isaac = import ./home/home.nix;
               };
