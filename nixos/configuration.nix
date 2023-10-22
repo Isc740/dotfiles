@@ -39,7 +39,7 @@
 
   ###------XORG------### 
   services.xserver.enable = true;
-
+  # services.xserver.displayManager.startx.enable = true;
 
   ###------LOCALE------###
   i18n.defaultLocale = "en_US.UTF-8";

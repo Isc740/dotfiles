@@ -132,9 +132,8 @@
 
     dmenu
     i3status-rust
-    i3lock
     i3blocks
-
+    i3lock-fancy
     spotify
     steamcmd
     tutanota-desktop

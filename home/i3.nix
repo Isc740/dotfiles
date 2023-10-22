@@ -13,7 +13,8 @@ in {
 
       keybindings = lib.mkOptionDefault {
         "${mod}+p" = "exec ${pkgs.dmenu}/bin/dmenu_run";
-        
+      	"${mod}+Shift+Enter" = "exec ${pkgs.alacritty}/bin/alacritty";
+        "${mod}+Shift+c" = "kill";
         "${mod}+h" = "focus left";
         "${mod}+j" = "focus up";
         "${mod}+k" = "focus down";
@@ -22,9 +23,10 @@ in {
       };
     
       bars = [
-        {
+	{
           position = "top";
-        }
+          statusCommand = "${pkgs.i3status-rust}/bin/i3status-rs ${./i3status-rust.toml}";
+	}
       ];
     };
   };
