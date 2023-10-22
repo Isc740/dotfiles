@@ -60,7 +60,6 @@
   ###------DESKTOP ENVIROMENTS------###
   services.xserver.desktopManager = {
     xterm.enable = false;
-    xfce.enable = true;
     gnome.enable = true;
   };
 
