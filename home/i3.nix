@@ -13,7 +13,7 @@ in {
 
       keybindings = lib.mkOptionDefault {
         "${mod}+p" = "exec ${pkgs.dmenu}/bin/dmenu_run";
-      	"${mod}+Shift+Enter" = "exec ${pkgs.alacritty}/bin/alacritty";
+      	"${mod}+Shift+enter" = "alacritty";
         "${mod}+Shift+c" = "kill";
         "${mod}+h" = "focus left";
         "${mod}+j" = "focus up";
