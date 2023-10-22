@@ -13,13 +13,24 @@ in {
 
       keybindings = lib.mkOptionDefault {
         "${mod}+p" = "exec ${pkgs.dmenu}/bin/dmenu_run";
-      	"${mod}+Shift+enter" = "alacritty";
+      	"${mod}+Shift+Return" = "exec ${pkgs.alacritty}/bin/alacritty";
         "${mod}+Shift+c" = "kill";
+        
+        #FOCUS
         "${mod}+h" = "focus left";
         "${mod}+j" = "focus up";
         "${mod}+k" = "focus down";
         "${mod}+l" = "focus right";
 
+        #MOVE
+        "${mod}+Shift+h" = "move left";
+        "${mod}+Shift+j" = "move up";
+        "${mod}+Shift+k" = "move down";
+        "${mod}+Shift+l" = "move left";
+
+        "${mod}+t" = "floating toggle";
+
+        "${mod}+Shift+e" = "reload";
       };
     
       bars = [

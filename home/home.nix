@@ -130,9 +130,8 @@
     gnomeExtensions.appindicator
     gnomeExtensions.compiz-windows-effect
 
+    pulsemixer
     dmenu
-    i3status-rust
-    i3blocks
     i3lock-fancy
     spotify
     steamcmd
