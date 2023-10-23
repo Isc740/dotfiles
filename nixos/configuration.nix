@@ -125,13 +125,11 @@
   sound.enable = true;
   hardware.pulseaudio.enable = true;
 
-
   ###------USERS------###
   users.users.isaac = {
     isNormalUser = true;
     extraGroups = [ "wheel" "audio" "video" "networkmanager" ]; # Enable ‘sudo’ for the user.
     packages = [
-      
     ];
   };
 
