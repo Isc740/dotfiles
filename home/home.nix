@@ -125,6 +125,7 @@
 
 
   home.packages = with pkgs; [
+    pandoc 
     #Gnome Extensions
     gnome3.gnome-tweaks
     gnomeExtensions.appindicator
