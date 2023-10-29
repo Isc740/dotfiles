@@ -104,7 +104,7 @@
       yzhang.markdown-all-in-one
       jnoortheen.nix-ide
       llvm-vs-code-extensions.vscode-clangd
-      ms-python.python
+      # ms-python.python
       pkief.material-icon-theme
 
     ] ++ pkgs.vscode-utils.extensionsFromVscodeMarketplace [
