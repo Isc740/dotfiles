@@ -131,7 +131,7 @@
 
 
   home.packages = with pkgs; [
-    
+    keepassxc 
     youtube-dl
     #gpick
     pandoc 
