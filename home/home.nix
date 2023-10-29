@@ -126,6 +126,7 @@
 
 
   home.packages = with pkgs; [
+    
     youtube-dl
     #gpick
     pandoc 
