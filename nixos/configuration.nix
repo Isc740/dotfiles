@@ -160,6 +160,16 @@
     dedicatedServer.openFirewall = true;
   };
 
+
+  ###------NEXTCLOUD------###
+  environment.etc."nextcloud-admin-pass".text = "admin123";
+  services.nextcloud = {
+    enable = true;
+    package = pkgs.nextcloud27;
+    hostName = "localhost";
+    config.adminpassFile = "/etc/nextcloud-admin-pass";
+  };
+
   # Some programs need SUID wrappers, can be configured further or are
   # started in user sessions.
   # programs.mtr.enable = true;

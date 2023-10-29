@@ -131,6 +131,7 @@
 
 
   home.packages = with pkgs; [
+    brave
     keepassxc 
     youtube-dl
     #gpick
