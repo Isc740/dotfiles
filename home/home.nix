@@ -17,7 +17,8 @@
     shellAliases = {
       vi = "nvim";
       ll = "ls -la";
-      flakeupdate = "sudo nixos-rebuild switch --flake '/home/isaac/.config/nix/#MonixOS'";
+      nixupdate = "sudo nixos-rebuild switch --flake '/home/isaac/.config/nix/#MonixOS'";
+      flakeupdate = "sudo nix flake update /home/isaac/.config/nix/";
       homeupdate = "home-manager switch --flake /home/isaac/.config/nix/src/#isaac";
       monika = "steam-run ~/ddlc/DDLC.sh";
       pollymc = "appimage-run ~/PollyMC-Linux-7.2-x86_64.AppImage";
@@ -125,6 +126,8 @@
 
 
   home.packages = with pkgs; [
+    youtube-dl
+    #gpick
     pandoc 
     #Gnome Extensions
     gnome3.gnome-tweaks
