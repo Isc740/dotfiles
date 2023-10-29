@@ -19,7 +19,7 @@
       ll = "ls -la";
       nixupdate = "sudo nixos-rebuild switch --flake '/home/isaac/.config/nix/#MonixOS'";
       flakeupdate = "sudo nix flake update /home/isaac/.config/nix/";
-      homeupdate = "home-manager switch --flake /home/isaac/.config/nix/src/#isaac";
+      flakelock = "sudo nix flake update /home/isaac/.config/nix/";
       monika = "steam-run ~/ddlc/DDLC.sh";
       pollymc = "appimage-run ~/PollyMC-Linux-7.2-x86_64.AppImage";
       untargz = "tar -xvzf";
@@ -94,6 +94,11 @@
     enable = true;
     userName = "Isc740";
     userEmail = "isaazcantillo@gmail.com"; 
+    aliases = {
+      cm = "commit";
+      co = "checkout";
+      s = "status";
+    };
   };
 
   programs.vscode = {
