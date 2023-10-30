@@ -26,7 +26,7 @@
   nixpkgs.config.allowUnfree = true;
   nix.settings.allowed-users = [ "*" ];
   nix.settings.experimental-features = [ "nix-command" "flakes" ];
-
+  programs.gamemode.enable = true;
 
   ###------ENVIROMENT PATH------###
 
@@ -62,6 +62,7 @@
   services.xserver.desktopManager = {
     xterm.enable = false;
     gnome.enable = true;
+    xfce.enable = true;
   };
 
   environment.gnome.excludePackages = (with pkgs; [
