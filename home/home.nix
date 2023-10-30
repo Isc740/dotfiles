@@ -131,6 +131,7 @@
 
 
   home.packages = with pkgs; [
+    neovim
     brave
     keepassxc 
     youtube-dl
@@ -150,7 +151,6 @@
     #libsForQt5.kxmlgui
     qt5.qtbase
     gimp-with-plugins
-    neovim
     onlyoffice-bin
     gnome-browser-connector
     firefox

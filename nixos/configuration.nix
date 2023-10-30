@@ -12,6 +12,7 @@
 
 
   ###------BOOTLOADER------###
+  boot.kernelPackages = pkgs.linuxPackages_xanmod_stable;
   boot.supportedFilesystems = [ "btrfs" ];
   boot.loader.systemd-boot.enable = true;
   boot.loader.efi.canTouchEfiVariables = true;
