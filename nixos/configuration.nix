@@ -2,7 +2,7 @@
 # your system.  Help is available in the configuration.nix(5) man page
 # and in the NixOS manual (accessible by running `nixos-help`).
 
-{ config, pkgs, ... }:
+{ config, pkgs, inputs, ... }:
 
 {
   imports = [
@@ -131,7 +131,10 @@
   users.users.isaac = {
     isNormalUser = true;
     extraGroups = [ "wheel" "audio" "video" "networkmanager" ]; # Enable ‘sudo’ for the user.
-    packages = [
+    packages = with pkgs; [
+      inputs.nix-gaming.packages.${pkgs.system}.wine-ge
+      inputs.nix-gaming.packages.${pkgs.system}.proton-ge
+      inputs.nix-gaming.packages.${pkgs.system}.roblox-player
     ];
   };
 
