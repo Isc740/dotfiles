@@ -6,8 +6,8 @@
 
 {
   imports = [
-    # Include the results of the hardware scan.
     ./hardware-configuration.nix
+    inputs.nix-gaming.nixosModules.pipewireLowLatency
   ];
 
 
@@ -125,16 +125,54 @@
 
   ###------SOUND------###
   sound.enable = true;
-  hardware.pulseaudio.enable = true;
+  hardware.pulseaudio.enable = false;
+
+  services.pipewire = {
+    enable = true;
+    alsa.enable = true;
+    alsa.support32Bit = true;
+    pulse.enable = true;
+
+    lowLatency = {
+      # enable this module
+      enable = true;
+      # defaults (no need to be set unless modified)
+      quantum = 64;
+      rate = 48000;
+    };
+  };
+
+  security.rtkit.enable = true;
+
+
+  ###------INSECURE------###
+  nixpkgs.config.permittedInsecurePackages = [
+    "electron-24.8.6"
+  ];
+
 
   ###------USERS------###
   users.users.isaac = {
     isNormalUser = true;
     extraGroups = [ "wheel" "audio" "video" "networkmanager" ]; # Enable ‘sudo’ for the user.
     packages = with pkgs; [
-      inputs.nix-gaming.packages.${pkgs.system}.wine-ge
+      heroic
+      wineWowPackages.stable
+      winetricks
+      (lutris.override {
+        extraLibraries = pkgs: [
+
+        ];
+        extraPkgs = pkgs: [
+
+        ];
+      })
       inputs.nix-gaming.packages.${pkgs.system}.proton-ge
+      inputs.nix-gaming.packages.${pkgs.system}.wine-ge
+      inputs.nix-gaming.packages.${pkgs.system}.wine-osu
       inputs.nix-gaming.packages.${pkgs.system}.roblox-player
+      inputs.nix-gaming.packages.${pkgs.system}.osu-stable
+      inputs.nix-gaming.packages.${pkgs.system}.osu-lazer-bin
     ];
   };
 
