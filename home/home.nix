@@ -131,8 +131,9 @@
 
 
   home.packages = with pkgs; [
+    steam-tui
+    obs-studio
     neovim
-    brave
     keepassxc 
     youtube-dl
     #gpick
