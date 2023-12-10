@@ -131,6 +131,7 @@
 
 
   home.packages = with pkgs; [
+    librewolf
     steam-tui
     obs-studio
     neovim

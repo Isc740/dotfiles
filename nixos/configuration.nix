@@ -137,7 +137,7 @@
       # enable this module
       enable = true;
       # defaults (no need to be set unless modified)
-      quantum = 64;
+      quantum = 128;
       rate = 48000;
     };
   };
@@ -157,8 +157,8 @@
     extraGroups = [ "wheel" "audio" "video" "networkmanager" ]; # Enable ‘sudo’ for the user.
     packages = with pkgs; [
       heroic
-      wineWowPackages.stable
-      winetricks
+      # wineWowPackages.stable
+      # winetricks
       (lutris.override {
         extraLibraries = pkgs: [
 
@@ -167,11 +167,11 @@
 
         ];
       })
-      inputs.nix-gaming.packages.${pkgs.system}.proton-ge
-      inputs.nix-gaming.packages.${pkgs.system}.wine-ge
-      inputs.nix-gaming.packages.${pkgs.system}.wine-osu
-      inputs.nix-gaming.packages.${pkgs.system}.roblox-player
-      inputs.nix-gaming.packages.${pkgs.system}.osu-stable
+      # inputs.nix-gaming.packages.${pkgs.system}.proton-ge
+      # inputs.nix-gaming.packages.${pkgs.system}.wine-ge
+      # inputs.nix-gaming.packages.${pkgs.system}.wine-osu
+      # inputs.nix-gaming.packages.${pkgs.system}.roblox-player
+      # inputs.nix-gaming.packages.${pkgs.system}.osu-stable
       inputs.nix-gaming.packages.${pkgs.system}.osu-lazer-bin
     ];
   };
